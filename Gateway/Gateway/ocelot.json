@@ -1,0 +1,136 @@
+﻿{
+  "Routes": [
+
+    // CLIENT SERVICE
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/loginMiles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/loginMiles",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/registerMiles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/registerMiles",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/search",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/search",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/flexSearch",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/flexSearch",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/buyTicket?flightCode={code}&clientEmail={mail}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/buy/{code}/{mail}",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/Client/buyWithMiles?flightCode={code}&clientEmail={mail}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/buyWithMiles/{code}/{mail}",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    },
+    // CLIENT SERVICE
+
+    //FLIGHT MANAGER SERVICE
+    {
+      "DownstreamPathTemplate": "/api/v1/FlightManager/adminLogin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/adminLogin",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/FlightManagar/getAll",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/getAll",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/FlightManager/addFlight",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7091
+        }
+      ],
+      "UpstreamPathTemplate": "/addFlight",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}
