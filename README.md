@@ -43,5 +43,44 @@ The system consists of 1 API Gateway and 2 different APIs (FlightService, Notifi
 ![deleteflight](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/54da3957-a6a6-46b2-a63b-fb19d4cee050)
 
 
-## NotificationService
+## NotificationService API
+
+![mail](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/a67e05c6-7356-45f2-a0bb-55fa38ba3f81)
+
+## Gateway (Hosted App Service Links provided)
+* Gateway built with .NET "Ocelot"
+## Endpoints
+* /loginMiles (redirects to FlightServiceAPI/api/v1/Client/loginMiles)
+* /registerMiles (redirects to FlightServiceAPI/api/v1/Client/registerMiles)
+* /search (redirects to FlightServiceAPI/api/v1/Client/search)
+* /flexSearch (redirects to FlightServiceAPI/api/v1/Client/loginMiles)
+* /buy/{code}/{mail} (redirects to FlightServiceAPI/api/v1/Client/buyTicket?flightCode={code}&clientEmail={mail})
+* /buyWithMiles{code}{mail} (redirects to FlightServiceAPI/api/v1/Client/buyWithMiles?flightCode={code}&clientEmail={mail})
+* /adminLogin (redirects to FlightServiceAPI/api/v1/FlightManager/adminLogin)
+* /getAll (redirects to FlightServiceAPI/api/v1/FlightManager/getAll)
+* /addFlight (redirects to FlightServiceAPI/api/v1/FlightManager/addFlight)
+
+# UI
+## A simple UI was developed using vue.js to test system functions. (Hosted on Azure, link provided)
+
+* Welcome Page
+![welcome](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/95768eb3-f615-4573-b8d4-16ff0268ee5a)
+(sample mail address and passwords are provided - you can also test as guest by clicking "guest" button)
+
+* Admin Login Page (sample mail address and passwords are provided)
+![adminlogin](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/7cb544e4-747a-4088-b7a1-41cfeb60b917)
+
+* Admin Page
+![adminpage](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/007b7c04-6759-41a6-b459-bb5f08b33087)
+
+
+* Member / Guest Page
+![search](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/4ca06635-edad-4d68-8396-683ffdb6c632)
+
+# Caching (Redis - Azure Cache for Redis)
+* all the data about airports and cities are server-side cached.
+![cache1](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/75d52a9f-2378-4284-9b7f-7db25588cd38)
+
+![cache2](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/9c0bcf3b-2187-4301-a6ab-818d8081d71f)
+
 
