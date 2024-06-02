@@ -83,4 +83,11 @@ The system consists of 1 API Gateway and 2 different APIs (FlightService, Notifi
 
 ![cache2](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/9c0bcf3b-2187-4301-a6ab-818d8081d71f)
 
+## Security
+* Some endpoints are protected with jwt
+* All user passwords are hashed and saved in the database with the sha-512 algorithm.
 
+## Additional
+* "Hangfire" was used as a timer to send informative e-mails to users about their miles points.
+* If member earns miles points aftera flight, an e-mail will be sent to the e-mail queue after 12 hours.
+NotificationServiceAPI sends a notification e-mail to the related e-mail address as soon as a message arrives in the queue.
