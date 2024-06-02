@@ -26,6 +26,22 @@ The system consists of 1 API Gateway and 2 different APIs (FlightService, Notifi
 
 ![gettickets](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/5276b82c-305e-4ce0-a1cb-d84f57b79f78)
 
+## FlightServiceAPI/FlightManager
+
+![flightmanager](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/6e6f3ddf-4d49-420b-b2a7-1b4ddd27bc39)
+## Endpoints
+![getairports](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/3d867dbf-44c6-4f83-ba35-c8c3b9579613)
+
+![getcities](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/6559307c-2551-4bcf-bb4c-9d304301ee22)
+
+![adminlogin](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/56c3989b-7d93-48df-bc9a-b3dadfcb7648)
+
+![getall](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/eac3db13-aa11-4957-a8ae-543a6f3332f8)
+
+![addflight](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/8a1b175f-30eb-4e0e-bf7c-8deecbdb7a5c)
+
+![deleteflight](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/54da3957-a6a6-46b2-a63b-fb19d4cee050)
+
 
 ## NotificationService
 
