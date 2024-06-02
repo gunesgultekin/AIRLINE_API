@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Gateway/Gateway/appsettings.json
+/Gateway/Gateway/Gateway.http
+/Gateway/Gateway/Properties/launchSettings.json
+/Gateway/Gateway/appsettings.Development.json
+/NotificationService/NotificationServiceAPI/appsettings.json
+/NotificationService/NotificationServiceAPI/appsettings.Development.json
+/NotificationService/NotificationServiceAPI/NotificationServiceAPI.http
+/FlightService/FlightServiceAPI/Properties/ServiceDependencies/FlightServiceAPI - Web Deploy/profile.arm.json
+/NotificationService/NotificationServiceAPI/Properties/launchSettings.json
