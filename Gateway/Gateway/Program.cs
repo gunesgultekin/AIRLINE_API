@@ -20,6 +20,19 @@ namespace Gateway
             builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
             builder.Services.AddOcelot();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder
+                           .AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                    }
+                    );
+            });
+
 
             var app = builder.Build();
 
@@ -34,9 +47,13 @@ namespace Gateway
 
             app.UseAuthorization();
 
+            app.UseCors("AllowAll");
+
             app.UseOcelot().Wait();
 
             app.MapControllers();
+
+           
 
             app.Run();
         }

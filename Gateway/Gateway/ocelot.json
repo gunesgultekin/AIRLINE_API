@@ -7,8 +7,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/loginMiles",
@@ -21,8 +21,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1/registerMiles",
@@ -31,12 +31,12 @@
     },
 
     {
-      "DownstreamPathTemplate": "/api/v1/Client/search",
+      "DownstreamPathTemplate": "/api/v1/Client/flexSearch",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/search",
@@ -49,8 +49,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/flexSearch",
@@ -63,8 +63,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/buy/{code}/{mail}",
@@ -77,8 +77,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/buyWithMiles/{code}/{mail}",
@@ -93,8 +93,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/adminLogin",
@@ -103,12 +103,12 @@
     },
 
     {
-      "DownstreamPathTemplate": "/api/v1/FlightManagar/getAll",
+      "DownstreamPathTemplate": "/api/v1/FlightManager/getAll",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/getAll",
@@ -121,8 +121,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7091
+          "Host": "flightserviceapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/addFlight",
@@ -131,6 +131,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000"
+    "BaseUrl": "flightserviceapi.azurewebsites.net"
   }
 }

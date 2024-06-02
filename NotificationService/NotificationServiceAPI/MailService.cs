@@ -61,7 +61,7 @@ namespace NotificationServiceAPI
 
         public async Task sendMail(MailModel model)
         {
-            string sendermail = "**********@gmail.com";
+            string sendermail = "-";
             string senderPassword = _configuration.GetConnectionString("MailClientPass");
 
             var smtpClient = new SmtpClient()

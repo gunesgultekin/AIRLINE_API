@@ -5,7 +5,7 @@
 The system consists of 1 API Gateway and 2 different APIs (FlightService, NotificationService). All components are hosted on Azure cloud.
  
 # FlightService API
-
+* (!) All the URLs about deployments are provided in Moodle.
 ## FlightServiceAPI/Client
 ![client](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/08450c33-9e2b-4e2a-bc68-bed10a69adf3)
 ## Endpoints
@@ -91,3 +91,7 @@ The system consists of 1 API Gateway and 2 different APIs (FlightService, Notifi
 * "Hangfire" was used as a timer to send informative e-mails to users about their miles points.
 * If member earns miles points aftera flight, an e-mail will be sent to the e-mail queue after 12 hours.
 NotificationServiceAPI sends a notification e-mail to the related e-mail address as soon as a message arrives in the queue.
+
+## Data Model
+![er-diag](https://github.com/gunesgultekin/AIRLINE_API/assets/126399958/7573adde-d017-4e8d-80df-a767c10ebcf2)
+
